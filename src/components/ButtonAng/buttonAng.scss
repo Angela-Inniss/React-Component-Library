@@ -1,0 +1,40 @@
+.c-ang-button {
+    width: 200px;
+    height: auto;
+    background-color: deeppink;
+    border-radius: 4px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border:0;
+    box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.75);
+
+
+    &--hasOutline {
+        background-color: transparent;
+        color: deeppink;
+        border: deeppink 1px solid;
+    }
+
+    &--isDisabled {
+        background-color: grey;
+    }
+
+    &--primary {
+        background-color: deeppink;
+        color: white;
+    }
+
+    &--secondary {
+        background-color: mediumslateblue;
+        color: white;
+    }
+
+    &--pill {
+        border-radius: 22.5px;
+    }
+}
+
+

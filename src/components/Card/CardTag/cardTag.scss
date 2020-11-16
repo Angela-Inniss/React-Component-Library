@@ -1,0 +1,15 @@
+.c-card-tag {
+  &__label {
+    width: 100%;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font: 400 13.3333px Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

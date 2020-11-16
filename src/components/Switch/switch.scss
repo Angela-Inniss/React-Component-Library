@@ -1,0 +1,35 @@
+.c-switch {
+  height: 30px;
+  width: 60px;
+  background-color: gray;
+  border-radius: 30px;
+  box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 80%;
+  }
+
+  &--isChecked {
+    background-color: deeppink;
+    &::before {
+      left: 46%;
+    }
+  }
+
+  input {
+    visibility: hidden;
+  }
+}
+
+// had to add & before the pseudo selector :before
+// the before goes before the c-switch which is the label, can't go before an input as it's a self closing tag

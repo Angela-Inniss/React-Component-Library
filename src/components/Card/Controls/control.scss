@@ -1,0 +1,42 @@
+.c-control {
+  &__arrow-container {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //margin: auto;
+  }
+
+  &__arrow-icon {
+    &--right {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      padding: 3px;
+      transform: rotate(-45deg);
+    }
+    &--left {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      padding: 3px;
+      transform: rotate(135deg);
+    }
+    &--up {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      padding: 3px;
+      transform: rotate(-135deg);
+    }
+    &--down {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+//make reusable with props
