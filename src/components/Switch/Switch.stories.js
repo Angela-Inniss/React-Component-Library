@@ -11,7 +11,7 @@ const StoryTemplate = (args) => <Switch {...args}/>;
 
 
 export const Default = StoryTemplate.bind({});
-//name of story
+// name of story
 Default.args = {
     label: "SWITCH",
     checked: true

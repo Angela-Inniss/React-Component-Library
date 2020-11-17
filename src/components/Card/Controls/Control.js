@@ -22,6 +22,6 @@ const Control = ({ direction, onClick }: Props) => {
 export default Control;
 
 // Component notes:
-// make reusable with props
-// arrow direction will need to change that will be the modifier and for each left right up down there will be diff styles
-// add onClick function so when user clicks we can pass a function to this
+// Make reusable with props
+// Arrow direction will need to change that will be the modifier and for each left right up down there will be diff styles
+// Add onClick function so when user clicks we can pass a function to this
