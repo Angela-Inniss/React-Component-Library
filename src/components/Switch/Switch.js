@@ -26,6 +26,7 @@ Switch.defaultProps = {
 
 export default Switch;
 
+// Component Notes:
 // had to use a label to wrap the input
 // https://stackoverflow.com/questions/774054/should-i-put-input-elements-inside-a-label-element
 

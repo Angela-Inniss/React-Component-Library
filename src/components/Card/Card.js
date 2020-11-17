@@ -1,5 +1,5 @@
-// square with round edges
 // @flow
+
 import React from "react";
 
 import bem from "../../bem";
