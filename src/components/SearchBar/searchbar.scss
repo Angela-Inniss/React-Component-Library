@@ -1,0 +1,22 @@
+.c-search-bar {
+  font-size: 20px;
+  input {
+    display: block;
+    border: none;
+    background: #f7f1f1;
+    padding: 0 1.5em;
+    font-size: initial;
+    outline: none;
+    height: 3rem;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__title,
+  &__label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display:inline-block;
+  }
+}

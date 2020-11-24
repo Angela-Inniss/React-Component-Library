@@ -1,9 +1,12 @@
 import React from "react";
-import "./app.scss";
+
 import bem from "./bem";
 import ButtonAng from "./components/ButtonAng/ButtonAng";
 import Switch from "./components/Switch/Switch";
 import Control from "./components/Card/Controls/Control";
+import SearchBar from "./components/SearchBar/SearchBar";
+
+import "./app.scss";
 
 const onSwitchChange = () => {};
 const onButtonAngClick = () => {};
@@ -13,7 +16,8 @@ function App() {
   const components = [
     <ButtonAng type="primary" onClick={onButtonAngClick} pill={false} />,
     <Switch onSwitchChange={onSwitchChange} className="app-switch" />,
-    <Control direction="right"/>,
+    <Control direction="right" />,
+    <SearchBar />,
   ];
   return (
     <div className={bem(baseClass, "grid-container")}>
@@ -25,12 +29,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-// do a grid display grid and tehn map over each elemtnt i create an dput it in a cell :)
