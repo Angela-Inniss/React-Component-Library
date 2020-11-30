@@ -14,6 +14,7 @@ const SearchBar = ({ showListItems }: Props) => {
   const baseClass = "c-search-bar";
 
   // book list initial state
+    // eslint-disable-next-line no-unused-vars
   const [books, setBooks] = useState([
     "Queenie",
     "UGLY",

@@ -14,10 +14,15 @@ LikeButtonDefault.args = {
 
 export const LikeButtonPink = Template.bind({});
 LikeButtonPink.args = {
-  liked: true,
+  backgroundColor: "pink",
 };
 
 export const LikeButtonGrey = Template.bind({});
-LikeButtonPink.args = {
-  liked: false,
+LikeButtonGrey.args = {
+  backgroundColor: "grey",
+};
+
+export const LikeButtonPurple = Template.bind({});
+LikeButtonPurple.args = {
+  backgroundColor: "mediumslateblue",
 };
