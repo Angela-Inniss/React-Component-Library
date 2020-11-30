@@ -9,7 +9,7 @@ const Template = (args) => <LikeButtonHeart {...args} />;
 
 export const LikeButtonDefault = Template.bind({});
 LikeButtonDefault.args = {
-  liked: false,
+
 };
 
 export const LikeButtonPink = Template.bind({});

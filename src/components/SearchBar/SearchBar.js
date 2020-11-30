@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import bem from "../../bem";
 
@@ -14,7 +17,7 @@ const SearchBar = ({ showListItems }: Props) => {
   const baseClass = "c-search-bar";
 
   // book list initial state
-    // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-unused-vars
   const [books, setBooks] = useState([
     "Queenie",
     "UGLY",
@@ -44,12 +47,15 @@ const SearchBar = ({ showListItems }: Props) => {
       <label className={bem(baseClass, "label")} htmlFor="Search">
         Search the list
       </label>
+      <FontAwesomeIcon className={bem(baseClass,"search-icon")} icon={faSearch} />
+
       <input
         type="text"
         onChange={handleOnChange}
         value={searchValue}
         placeholder="Search the list"
       />
+
       <p className={bem(baseClass, "title")}> Book list</p>
       <div>{dynamicSearch.length === 0 ? "sorry no results" : ""}</div>
       <SearchBarListContainer showItems={true} items={dynamicSearch} />

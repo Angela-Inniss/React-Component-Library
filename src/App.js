@@ -5,9 +5,10 @@ import ButtonAng from "./components/ButtonAng/ButtonAng";
 import Switch from "./components/Switch/Switch";
 import Control from "./components/Card/Controls/Control";
 import SearchBar from "./components/SearchBar/SearchBar";
+import LikeButtonHeart from "./components/LikeButtonHeart/LikeButtonHeart";
 
 import "./app.scss";
-import LikeButtonHeart from "./components/LikeButtonHeart/LikeButtonHeart";
+
 
 const onSwitchChange = () => {};
 const onButtonAngClick = () => {};
@@ -15,11 +16,11 @@ const onButtonAngClick = () => {};
 const baseClass = "c-app";
 
 function App() {
-  const color = "red";
+  const color = "mediumslateblue";
   const components = [
     <ButtonAng type="primary" onClick={onButtonAngClick} pill={false} />,
     <Switch onSwitchChange={onSwitchChange} className="app-switch" />,
-    <Control direction="right" />,
+    <Control style={{margin:"auto"}} direction="right" />,
     <SearchBar />,
     <LikeButtonHeart onLikeClick={() => {}}  backgroundColor={color}/>
   ];

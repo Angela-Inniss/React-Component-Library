@@ -28,6 +28,10 @@ const LikeButtonHeart = ({ backgroundColor }: Props) => {
   );
 };
 
+LikeButtonHeart.defaultProps = {
+  backgroundColor: "black"
+};
+
 export default LikeButtonHeart;
 
 // Component Notes:
