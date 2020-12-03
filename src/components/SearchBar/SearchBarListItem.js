@@ -10,7 +10,7 @@ const SearchBarListContainer = ({ items, showItems }: Props) => {
       {showItems
         ? items.map((item) => {
             return (
-              <div style={{ fontFamily: "Arial", fontSize: 15 }}>{item}</div>
+              <div style={{ fontFamily: "monospace", fontSize: 15 }}>{item}</div>
             );
           })
         : "List items hidden"}

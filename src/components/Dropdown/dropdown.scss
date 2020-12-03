@@ -1,0 +1,17 @@
+.dropdown {
+  &__label {
+    font-size:20px;
+    font-family: monospace;
+    display:block;
+    margin-bottom: 10px;
+  }
+  &__select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #f7f1f1;
+    font-family: monospace;
+    border:0;
+  }
+}
