@@ -13,12 +13,27 @@ import { options } from "./optionsLists";
 import { optionsSelectDropdown } from "./optionsLists";
 
 import "./app.scss";
+import UserInputForm from "./components/UserInputForm";
 
 const onSwitchChange = () => {};
 const onButtonAngClick = () => {};
 const handleSelectOption = (event) => {
   // add API request here
   console.log(event.target.value);
+};
+
+const cards = ["card1", "card2"];
+
+const student = "student";
+const firstName = "angela";
+
+const testFunction = (name) => {
+  if (name === firstName) {
+    console.log(cards[0]);
+    console.log(cards[1]);
+  }
+  // console.log(name);
+  // console.log("test function where logic will happen to filter cards?");
 };
 
 const baseClass = "c-app";
@@ -43,7 +58,10 @@ function App() {
       options={optionsSelectDropdown}
       isClearable={true}
       isSearchable={false}
+      label="Select an ice cream flavour"
     />,
+
+    <UserInputForm submitData={testFunction} />,
   ];
   return (
     <div className={bem(baseClass, "grid-container")}>

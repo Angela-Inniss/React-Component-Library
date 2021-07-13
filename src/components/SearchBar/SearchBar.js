@@ -47,7 +47,10 @@ const SearchBar = ({ showListItems }: Props) => {
       <label className={bem(baseClass, "label")} htmlFor="Search">
         Search the list
       </label>
-      <FontAwesomeIcon className={bem(baseClass,"search-icon")} icon={faSearch} />
+      <FontAwesomeIcon
+        className={bem(baseClass, "search-icon")}
+        icon={faSearch}
+      />
 
       <input
         type="text"
@@ -63,3 +66,4 @@ const SearchBar = ({ showListItems }: Props) => {
   );
 };
 export default SearchBar;
+

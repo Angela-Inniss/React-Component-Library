@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Select from "react-select";
 
 // styles
-
+// find the keys for the elements you want to style here: https://react-select.com/styles
 const fontFamily = "monospace";
-const fontSize = 20;
+const fontSize = 18;
 const customStyles = {
   option: (provided, state) => ({
     ...provided,
@@ -20,6 +20,14 @@ const customStyles = {
     fontSize: fontSize,
     color: state.isSelected ? "deeppink" : "mediumslateblue",
     fontFamily: fontFamily,
+  }),
+  dropdownIndicator: (provided, state) => ({
+    ...provided,
+    color: "deeppink",
+  }),
+  placeholder: (provided, state) => ({
+    ...provided,
+    color: "black",
   }),
 };
 

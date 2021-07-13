@@ -3,7 +3,7 @@ import React from "react";
 import SearchBar from "./SearchBar";
 
 export default {
-  title: "Atoms/SearchBar",
+  title: "Inputs/SearchBar",
   component: SearchBar,
 };
 

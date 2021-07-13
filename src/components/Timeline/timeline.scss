@@ -1,0 +1,52 @@
+.c-timeline {
+  .c-timeline-row {
+    color: mediumpurple;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+
+    &__card-content {
+      margin-left: 100px;
+      border-radius: 4px;
+      box-shadow: 2px 2px 12px 2px gray;
+      height: 100px;
+      width: 300px;
+      padding: 10px;
+    }
+
+    //circle
+    &::before {
+      content: "";
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      background-color: mediumpurple;
+      position: absolute; // takes it out of document flow so we can move circle anywhere
+      display: block;
+      left: 70px; // moves circle to the right
+      //top: 50px; // this is half the height of the row container (25px)  also minus half the circle height (10) = 15px not sure why this isn't needed anymore mayeb dispay flex can handle position absolute elements
+      box-shadow: 2px 2px 12px 2px mediumpurple;
+    }
+
+    &::after {
+      content: "";
+      border-left: 3px dotted gray;
+      position: absolute; // take it out of document flow so we can position it where we want
+      left: 79px; //same distance to the right as circle but then it needs to be in the middle of circle so we add 10px but then the line is 2px so we have to take 1px off to make it really centered
+      height: 100%; // 100% height of it's container (timeline row) but then the "top" moves it down 70px from the nearest relative parent (timeline row)
+      display: block; // not sure why
+      top: 70px; // this is half the height of the timeline row (60px) plus half height of circle (10px)
+    }
+
+    &:last-child {
+      &::after {
+        content: none; // this makes sure that for the last child of the timeline i.e the last timeline row that the "after" pseudo class styles do not show.
+        // The dotted line after the last circle
+      }
+    }
+  }
+}
